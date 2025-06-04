@@ -1,0 +1,39 @@
+.list-element {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  padding: 9px 8px 9px 12px;
+  position: relative;
+  width: 250px;
+}
+
+.list-element .option {
+  color: var(--monochrome-5);
+  font-family: var(--body-16px-regular-font-family);
+  font-size: var(--body-16px-regular-font-size);
+  font-style: var(--body-16px-regular-font-style);
+  font-weight: var(--body-16px-regular-font-weight);
+  letter-spacing: var(--body-16px-regular-letter-spacing);
+  line-height: var(--body-16px-regular-line-height);
+  position: relative;
+  width: 214px;
+}
+
+.list-element.selected-true {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(42, 89, 254, 0.3) 0%,
+      rgba(42, 89, 254, 0.3) 100%
+    ), linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background-color: var(--backdark);
+}
+
+.list-element.selected-false {
+  background-color: var(--white);
+}
