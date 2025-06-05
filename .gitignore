@@ -1,0 +1,4 @@
+node_modules/
+my-design-system/node_modules/
+offline-cache/*
+!offline-cache/README.md
