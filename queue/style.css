@@ -1,3 +1,34 @@
-body {
-  font-family: sans-serif;
+.switch {
+  height: 20px;
+  width: 40px;
+}
+
+.switch .group {
+  border-radius: 16px;
+  height: 20px;
+}
+
+.switch .ellipse {
+  background-color: var(--white);
+  border-radius: 8px;
+  height: 16px;
+  position: relative;
+  top: 2px;
+  width: 16px;
+}
+
+.switch .turn-on-false {
+  background-color: var(--monochrome-85);
+}
+
+.switch .turn-on-true {
+  background-color: var(--statesuccess);
+}
+
+.switch .group.turn-on-false .ellipse {
+  left: 2px;
+}
+
+.switch .group.turn-on-true .ellipse {
+  left: 22px;
 }
